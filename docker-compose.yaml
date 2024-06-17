@@ -1,0 +1,10 @@
+services:
+  ? testing-aimee-front-end-001
+  : build:
+      context: .
+      target: production
+    image: testing-aimee-front-end-001
+    container_name: testing-aimee-front-end-001
+    environment:
+      APPINSIGHTS_CLOUDROLE: testing-aimee-front-end-001-local
+      APPINSIGHTS_CONNECTIONSTRING: ${APPINSIGHTS_CONNECTIONSTRING}

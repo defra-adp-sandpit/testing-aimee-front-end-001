@@ -1,0 +1,3 @@
+services:
+  ? testing-aimee-front-end-001
+  : command: npm run start:debug

@@ -1,0 +1,8 @@
+{{- include "adp-helm-library.deployment" (list . "testing-aimee-front-end-001.deployment") -}}
+{{- define "testing-aimee-front-end-001.deployment" -}}
+spec:
+  template:
+    spec:
+      containers:
+      - {{ include "adp-helm-library.container" (list . "testing-aimee-front-end-001.container") }}
+{{- end -}}
